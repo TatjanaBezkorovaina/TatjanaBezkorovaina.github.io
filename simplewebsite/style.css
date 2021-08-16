@@ -1,0 +1,23 @@
+/* header style */
+h1 {
+  color: white;
+  background-color: #a52a2a;
+  text-align: center;
+}
+
+/* images style */
+.dashed {
+  border: dashed;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* footer style */
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  size: 20px;
+}

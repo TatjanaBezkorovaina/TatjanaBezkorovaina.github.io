@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #3b3f45;
+  border: 15px solid white;
+}
+
+ul {
+  transition: all 0.1s ease-in;
+  margin-top: 35px;
+}
+
+header,
+footer {
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.foot {
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 30px;
+}
+
+.list {
+  margin-left: 400px;
+  margin-right: 400px;
+  color: #ffffff;
+}
+/* селектор по атрибуту, відступ від чекбоксу */
+input[type] {
+  margin-right: 10px;
+}
+
+li {
+  list-style-type: none;
+
+  padding: 10px;
+}
+
+/*псевдоклас before & after */
+.brackets::before {
+  content: "(";
+}
+
+.brackets::after {
+  content: ")";
+}
+
+/* псевдоклас nth-child  */
+li:nth-child(odd) {
+  background-color: #88839e;
+}
+
+li:nth-child(even) {
+  background-color: #7a7593;
+}
+
+/* псевдоклас Hover */
+li:hover {
+  background-color: #625e77;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+
+/* псевдоклас active */
+li:active {
+  background-color: #eb7e7f;
+}
+
+/* псевдоклас :checked тут я довго промучилась, але спрацювало лише для span */
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}

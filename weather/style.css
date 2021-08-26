@@ -199,6 +199,10 @@ i[class="wi wi-night-cloudy"] {
   opacity: 0.5;
 }
 
-ul:hover {
+ul:hover > li:hover {
+  opacity: 1;
+}
+
+ul:hover > li {
   opacity: 0.5;
 }

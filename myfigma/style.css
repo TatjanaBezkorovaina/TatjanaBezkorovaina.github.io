@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: url(./bgc.png);
-
-  width: 1920px;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
@@ -17,47 +22,48 @@ hr {
   margin-left: 405px;
 }
 
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 405px;
+  margin-right: 310px;
+}
+
 .adress {
   font-size: 13px;
   line-height: 150%;
-  width: 202px;
-  margin-left: 405px;
 }
 
 .phone {
   font-size: 13px;
-  margin-right: 405px;
-  margin-left: 795px;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 450px;
+  margin-right: 330px;
+}
 a {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   border-right: 1px solid white;
-  /* height: 45px; */
 }
 
 .catalogue {
-  margin-left: 510px;
-  margin-top: 11px;
   padding-right: 105px;
 }
 
 .delivery {
-  margin-left: 100px;
-  margin-top: 11px;
   padding-right: 115px;
 }
+
 .colection {
-  margin-left: 95px;
-  margin-top: 11px;
   padding-right: 110px;
 }
-.contacts {
-  margin-left: 100px;
-  margin-top: 11px;
-}
+
 .hreafone {
   margin-bottom: 11px;
 }
@@ -77,9 +83,10 @@ button {
 }
 
 .buttons {
-  position: absolute;
-  top: 700px;
-  left: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 620px;
 }
 .degust {
   margin-left: 30px;

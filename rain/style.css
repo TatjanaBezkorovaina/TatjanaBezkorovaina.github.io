@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #464f53;
+}
+
+.general-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  background-color: black;
+  color: white;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  margin-left: 325px;
+}
+
+.hrgorisont {
+  margin-top: 20px;
+}
+
+.title-inblock,
+.autor {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #616161;
+  letter-spacing: 5px;
+}
+
+.buttons {
+  font-size: 35px;
+  letter-spacing: 10px;
+  text-indent: 25px;
+  padding-top: 20px;
+  background-color: #f9bd2d;
+  color: rgba(255, 255, 255, 0.5);
+  height: 80px;
+  margin-left: 390px;
+}
+
+i:hover {
+  color: white;
+}
+
+.blackandyellow {
+  position: relative;
+  margin-bottom: -160px;
+  margin-top: 50px;
+}
+
+/* page */
+
+.preview {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-style: italic;
+}
+
+.content {
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-top: 200px;
+  padding-left: 60px;
+  padding-right: 130px;
+}
+.content-bgr {
+  background-color: #fff;
+  margin-left: 70px;
+}
+
+.story {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  text-align: justify;
+}
+
+.heading {
+  font-family: FuturaPTHeavy, sans-serif;
+  font-size: 78px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

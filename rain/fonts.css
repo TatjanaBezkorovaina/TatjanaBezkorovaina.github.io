@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "georgia";
+  src: url(./fonts/georgia.ttf) format("truetape");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FuturaPTHeavy";
+  src: url(./fonts/FuturaPTHeavy.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}

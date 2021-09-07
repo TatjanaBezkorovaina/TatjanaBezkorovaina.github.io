@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.sign-in {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.sign-in__panel {
+  max-width: 400px;
+  background-image: url(../media/darkbgr.jpg);
+  background-size: cover;
+  padding: 50px 70px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+}
+
+.tabs__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+.tabs__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.tabs__link {
+  color: #e1c2f1;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.tabs__link:hover {
+  color: #fbf6e4;
+}
+
+.tabs__body {
+  padding-top: 54px;
+}
+
+.form__controls {
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+}
+
+.form__label {
+  color: #fbf6e4;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form__input:focus {
+  border-color: #23ae92;
+}
+
+.form__label--checkbox {
+  font-size: 13px;
+}
+
+.form__input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  border: 2px solid rgba(191, 185, 204, 0.54);
+  color: white;
+  margin: 7px 0 0;
+  padding: 10px;
+}
+
+.form__controls--checkbox {
+  display: flex;
+  margin-top: 15px;
+}
+.form__label--checkbox {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.form__controls--submit {
+  padding-top: 36px;
+}
+.btn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #23ae92;
+  color: #fbf6e4;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  padding: 9px;
+  border: 2px solid #23ae92;
+}
+
+.btn--primary:hover {
+  background-color: #e66a64;
+}
+
+.form__advanced {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.form__link {
+  color: #b9b9cc;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  margin-right: 15px;
+}

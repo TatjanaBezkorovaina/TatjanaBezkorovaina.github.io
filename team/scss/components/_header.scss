@@ -1,0 +1,18 @@
+.header {
+  font-family: "Roboto", sans-serif;
+
+  &__wrapper {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  &__slogan {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__caption {
+    font-size: 60px;
+    color: $c-yellow;
+  }
+}

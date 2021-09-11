@@ -1,0 +1,19 @@
+.e-button {
+  transition: $t-normal;
+  padding: 5px 10px;
+  background-color: $c-white;
+  border: 2px solid $c-yellow;
+  cursor: pointer;
+  outline: none;
+  transition: $t-normal;
+}
+
+.profile-link {
+  color: $c-grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: $c-black;
+}

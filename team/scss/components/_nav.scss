@@ -1,0 +1,12 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+  list-style-type: none;
+  padding-left: 0;
+
+  &-item {
+    margin: 5px;
+  }
+}

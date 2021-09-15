@@ -1,0 +1,21 @@
+.c-header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    padding-left: 5%;
+  }
+
+  &__nav {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 100px;
+  }
+}

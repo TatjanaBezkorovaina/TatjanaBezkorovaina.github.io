@@ -1,0 +1,10 @@
+.nav__item {
+  margin-left: 45px;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    padding-top: 4px;
+    border-top: 5px solid $c-pink;
+  }
+}

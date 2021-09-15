@@ -1,0 +1,151 @@
+.header {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__wrapper {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header__slogan {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header__caption {
+  font-size: 60px;
+  color: #ffcc00;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-item {
+  margin: 5px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #666666;
+}
+
+.about-content {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 480px;
+  border-left: 2px solid #ffcc00;
+}
+
+.about-content__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-content__title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.about-content__article {
+  padding: 35px 30px 15px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.about-content__footer {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.decoration__wrapper {
+  margin-left: 30%;
+}
+
+.e-button {
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 5px 10px;
+  background-color: white;
+  border: 2px solid #ffcc00;
+  cursor: pointer;
+  outline: none;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-link {
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: black;
+}
+
+.image {
+  margin: 76px;
+  border: 2px solid #ffcc00;
+}
+
+.fire {
+  fill: #ffcc00;
+  width: 15px;
+  height: 20px;
+}
+
+.icon {
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #666666;
+}
+
+.icon:hover {
+  fill: black;
+  border: 3px solid black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.team {
+  max-width: 1100px;
+  margin: 0 auto;
+}

@@ -4,8 +4,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c-header__logo {
@@ -22,20 +22,20 @@
   display: flex;
   list-style-type: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 100px;
 }
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: url(../../aseets/bgr.png);
+  background: url(./aseets/bgr.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -78,8 +78,8 @@ body {
     display: flex;
     /* используем flex для центрирования содержимого */
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     /* центрируем содержимое кнопки */
     position: fixed;
     top: 20px;
@@ -122,7 +122,7 @@ body {
     text-align: center;
     background-color: #eceff1;
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     border: 5px solid transparent;
   }
   /* элементы меню */
@@ -141,17 +141,17 @@ body {
   }
   #menu__toggle:checked ~ .menu__btn > span {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .c-header__nav {
     visibility: visible;
@@ -181,7 +181,7 @@ body {
   cursor: pointer;
   outline: none;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .e-button--pink {
@@ -191,7 +191,7 @@ body {
 .e-button:hover {
   border: 1px solid black;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .nav__item {

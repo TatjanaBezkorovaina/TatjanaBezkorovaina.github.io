@@ -1,0 +1,22 @@
+.e-button {
+  padding: 15px 40px;
+  background-color: $c-silver;
+  transition: $t-normal;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid transparent;
+  box-shadow: $bs-normal;
+
+  &:hover {
+    border: 2px solid $c-white;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  &-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: $c-white;
+  }
+}

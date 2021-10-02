@@ -1,0 +1,19 @@
+.c-header {
+  &__wrapper {
+    font-family: $f-raleway;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 90px;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    font-size: 17px;
+    max-width: 570px;
+  }
+}

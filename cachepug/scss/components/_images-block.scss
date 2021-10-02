@@ -1,0 +1,59 @@
+.c-images-block {
+  display: flex;
+  justify-content: space-around;
+
+  &__wrapper {
+    max-width: 1165px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__top-part {
+    display: flex;
+
+    &-big {
+      width: 66%;
+    }
+
+    &-small {
+      margin-left: 2%;
+      width: 32%;
+    }
+  }
+
+  &__bottom-part {
+    display: flex;
+    margin-top: 2%;
+  }
+}
+
+.peach,
+.blueberry,
+.mulberry,
+.yogurt,
+.persimmon {
+  box-shadow: $bs-normal;
+}
+
+.blueberry {
+  margin-bottom: 8%;
+  width: 100%;
+}
+
+.persimmon {
+  margin-left: 2%;
+  width: 48%;
+}
+.yogurt {
+  width: 50%;
+}
+
+.peach {
+  width: 100%;
+}
+.mulberry {
+  width: 100%;
+}

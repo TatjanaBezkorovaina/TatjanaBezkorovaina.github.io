@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+body {
+  background-image: url(./img/tekstura-40.jpg);
+  font-family: "Lato", sans-serif;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#tabs {
+  margin: 30px auto;
+  width: 60%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.tabs-nav {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.tabs-nav li {
+  display: table-cell;
+  width: 33%;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.tabs-nav a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background: #fbfbfb;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #999;
+}
+
+@media (max-width: 767px) {
+  .services {
+    display: none;
+  }
+}
+
+.tabs-nav li:first-child a {
+  border-radius: 5px 0 0 0;
+}
+.tabs-nav li:last-child a {
+  display: block;
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+.tabs-nav a.active {
+  border-bottom: 1px solid #91f6fa;
+  background: #91f6fa;
+  color: #000;
+}
+.tabs-items {
+  border: 1px solid #91f6fa;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: #91f6fa;
+}
+
+.tabs-item {
+  display: flex;
+  padding: 23px;
+  /* border: 2px solid red; */
+}
+
+@media (max-width: 767px) {
+  .image_wrapper {
+    display: none;
+  }
+}
+
+.content {
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.image_wrapper {
+  margin-right: 15px;
+  width: 33%;
+}

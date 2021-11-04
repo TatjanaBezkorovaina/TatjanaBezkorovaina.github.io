@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&family=Noto+Serif+Display:ital,wght@1,500&family=Pacifico&family=Poppins&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="icon" href="./img/btfavicon.ico" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__shedule">
+        <h2>Графік роботи:</h2>
+        <p>
+          понеділок-п’ятниця – 9:00-19:00; <br />
+          субота – 10:00-18:00; <br />
+          неділя – 10:00 – 15:00.
+        </p>
+        <p>
+          м.Полтава, 36007, Україна.<br />
+          <a href="tel:0577770700">+38 (057) 777-07-00</a><br />
+          <a href="tel:0505770700">+38 (050) 577-07-00</a><br />
+          <a href="tel:0984770700">+38 (098) 477-07-00</a><br />
+          <a href="tel:0734470700">+38 (073) 447-07-00</a>
+        </p>
+        <p><a href="mailto:askmy@gmail.com">Пишіть на наш E-mail</a></p>
+      </div>
+      <!--The div element for the map -->
+      <div id="map"></div>
+    </div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiEmsKAKsKemDEdKCyGaW-Klp3XYlUQN8&callback=initMap&v=weekly"
+      async
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

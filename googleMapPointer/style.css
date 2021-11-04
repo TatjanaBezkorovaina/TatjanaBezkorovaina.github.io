@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 70%;
+  /* The width is the width of the web page */
+}
+
+.wrapper {
+  display: flex;
+  margin: 20px;
+}
+
+.wrapper__shedule {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 30%;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+@media (max-width: 833px) {
+  .wrapper {
+    display: block;
+  }
+
+  .wrapper__shedule {
+    width: 100%;
+  }
+
+  #map {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

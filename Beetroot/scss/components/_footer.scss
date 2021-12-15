@@ -1,0 +1,66 @@
+.c-footer {
+  font-family: $f-poppins;
+  background-image: url("../../assets/img/FooterBGR.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 235px;
+  margin-top: -160px;
+  z-index: 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  &__contacts {
+    &-value {
+      margin-top: 5px;
+    }
+    &-text {
+      color: $c-grey;
+      margin-top: 50px;
+    }
+  }
+
+  &__middle {
+    margin-bottom: 60px;
+    margin-top: 113px;
+  }
+
+  &__social {
+    &-subtitle {
+      padding-top: 8px;
+      color: $c-grey;
+    }
+    &-icons {
+      margin-top: 15px;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 30px;
+
+    &-copyrights {
+      font-size: 14px;
+      text-align: end;
+      color: $c-grey;
+      @media (max-width: 768px) {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// Bootstrap icon
+.bi {
+  margin-right: 5px;
+  opacity: 0.7;
+}
+.bi:hover {
+  opacity: 1;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px;
+}

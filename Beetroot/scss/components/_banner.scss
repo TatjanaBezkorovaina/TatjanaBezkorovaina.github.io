@@ -1,0 +1,35 @@
+.c-banner {
+  background-image: url("../../assets/img/Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: $f-poppins;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 189px;
+
+  &__wrapper {
+    position: relative;
+    max-width: 1110px;
+    // z-index: 3;
+  }
+
+  &__content {
+    margin-bottom: 55px;
+    max-width: 615px;
+  }
+
+  &__subtitle {
+    font-size: $fs-base;
+    line-height: 26px;
+  }
+
+  &__title {
+    line-height: 74px;
+    font-weight: 700;
+    font-size: 60px;
+    @media (max-width: 768px) {
+      line-height: 60px;
+      font-size: 50px;
+    }
+  }
+}

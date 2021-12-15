@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // border: 1px solid red;
+
+  &::selection {
+    background-color: rgba($c-yellow, 0.3);
+  }
+}
+
+body {
+  font-family: $f-poppins;
+  cursor: default;
+}
+
+.titleindent {
+  margin-bottom: 28px;
+  @media (max-width: 768px) {
+    margin-bottom: 5px;
+  }
+}
+
+.row {
+  margin: 0 auto;
+  // margin-right: 0px;
+  // margin-left: 0px;
+}
+
+.h-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  // padding: 0 20px;
+  width: 100%;
+}

@@ -500,8 +500,8 @@ body {
 .c-projects__ceo._active {
   -webkit-animation-name: appearance;
           animation-name: appearance;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;

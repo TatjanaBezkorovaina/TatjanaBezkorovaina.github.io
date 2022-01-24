@@ -4,26 +4,26 @@
   &__row {
     margin-bottom: 110px;
     align-items: center;
-    max-width: 1110px;
+    margin-left: 105px;
+    max-width: 976px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @media (max-width: 1145px) {
-      justify-content: space-around;
-    }
-    @media (max-width: 899px) {
-      text-align: center;
+    @media (max-width: 992px) {
+      display: block;
+      margin-left: 40px;
     }
   }
 
   &__title {
-    max-width: 400px;
+    max-width: 515px;
     width: 100%;
   }
 
   &__subtitle {
-    max-width: 500px;
-    width: 100%;
+    margin-left: 50px;
+    @media (max-width: 992px) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
 
   &__one {
@@ -54,7 +54,7 @@
     width: 50%;
     @media (max-width: 768px) {
       width: 100%;
-      margin-top: 60px;
+      margin-top: 30px;
     }
     &-link {
       margin-top: 115px;
@@ -65,10 +65,6 @@
     &--reverse {
       padding-left: 0;
       margin-left: 8%;
-      @media (max-width: 768px) {
-        padding-left: 8%;
-        margin-left: 0;
-      }
     }
   }
 

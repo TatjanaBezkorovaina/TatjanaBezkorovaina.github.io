@@ -83,5 +83,3 @@ function initMap() {
     title: "Find us here!",
   });
 }
-
-// Scroll to top

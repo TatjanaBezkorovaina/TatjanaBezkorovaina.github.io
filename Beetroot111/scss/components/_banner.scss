@@ -1,5 +1,5 @@
 .c-banner {
-  background-image: url("../../assets/img/Background.jpg");
+  background-image: url("./assets/img/Background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   font-family: $f-poppins;
@@ -8,6 +8,7 @@
   padding-top: 189px;
 
   &__wrapper {
+    position: relative;
     max-width: 1110px;
   }
 
@@ -30,8 +31,4 @@
       font-size: 50px;
     }
   }
-}
-
-.form-label {
-  margin-bottom: 0;
 }

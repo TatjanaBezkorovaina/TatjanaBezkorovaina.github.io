@@ -3,10 +3,6 @@
   padding-bottom: 160px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-  &__wrapper {
-    max-width: 1110px;
-  }
-
   &__ceo {
     &-name {
       @media (max-width: 991px) {
@@ -26,7 +22,6 @@
   }
 }
 
-// Styles More know about us, Youtube window
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;

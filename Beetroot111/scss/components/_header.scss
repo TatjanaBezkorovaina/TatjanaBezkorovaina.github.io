@@ -11,9 +11,6 @@
   z-index: 3;
   left: 0;
   top: 0;
-  @media (max-width: 350px) {
-    flex-direction: column;
-  }
 }
 
 .navbar {
@@ -25,9 +22,6 @@
   background-color: $c-white;
   padding: 0.4rem 0.4rem;
   border-radius: 50%;
-  @media (max-width: 350px) {
-    margin-top: 20px;
-  }
 }
 
 .offcanvas-end {

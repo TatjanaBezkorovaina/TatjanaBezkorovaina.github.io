@@ -66,11 +66,6 @@ body {
   left: 0;
   top: 0;
 }
-@media (max-width: 350px) {
-  .container-fluid {
-    flex-direction: column;
-  }
-}
 
 .navbar {
   flex-wrap: nowrap;
@@ -82,11 +77,6 @@ body {
   padding: 0.4rem 0.4rem;
   border-radius: 50%;
 }
-@media (max-width: 350px) {
-  .navbar-toggler {
-    margin-top: 20px;
-  }
-}
 
 .offcanvas-end {
   background-color: #808d71;
@@ -95,7 +85,7 @@ body {
 
 .c-footer {
   font-family: "Poppins", sans-serif;
-  background-image: url("../../assets/img/FooterBGR.jpg");
+  background-image: url("./assets/img/FooterBGR.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +146,7 @@ body {
 }
 
 .c-banner {
-  background-image: url("../../assets/img/Background.jpg");
+  background-image: url("./assets/img/Background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Poppins", sans-serif;
@@ -165,6 +155,7 @@ body {
   padding-top: 189px;
 }
 .c-banner__wrapper {
+  position: relative;
   max-width: 1110px;
 }
 .c-banner__content {
@@ -187,10 +178,6 @@ body {
   }
 }
 
-.form-label {
-  margin-bottom: 0;
-}
-
 .c-partners {
   background-color: #fafafa;
   position: absolute;
@@ -202,7 +189,6 @@ body {
 }
 
 .c-getStarted {
-  transform: translate(-100%, 0px);
   background-color: #fafafa;
   padding-bottom: 65px;
   padding-left: 55px;
@@ -259,28 +245,28 @@ body {
 .c-projects__row {
   margin-bottom: 110px;
   align-items: center;
-  max-width: 1110px;
+  margin-left: 105px;
+  max-width: 976px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-@media (max-width: 1145px) {
+@media (max-width: 992px) {
   .c-projects__row {
-    justify-content: space-around;
-  }
-}
-@media (max-width: 899px) {
-  .c-projects__row {
-    text-align: center;
+    display: block;
+    margin-left: 40px;
   }
 }
 .c-projects__title {
-  max-width: 400px;
+  max-width: 515px;
   width: 100%;
 }
 .c-projects__subtitle {
-  max-width: 500px;
-  width: 100%;
+  margin-left: 50px;
+}
+@media (max-width: 992px) {
+  .c-projects__subtitle {
+    margin-left: 0;
+    margin-right: 20px;
+  }
 }
 .c-projects__one {
   margin-bottom: 200px;
@@ -312,7 +298,7 @@ body {
 @media (max-width: 768px) {
   .c-projects__sidebar {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 .c-projects__sidebar-link {
@@ -326,12 +312,6 @@ body {
 .c-projects__sidebar--reverse {
   padding-left: 0;
   margin-left: 8%;
-}
-@media (max-width: 768px) {
-  .c-projects__sidebar--reverse {
-    padding-left: 8%;
-    margin-left: 0;
-  }
 }
 .c-projects__ceo {
   background-color: #ffff;
@@ -373,9 +353,6 @@ body {
   margin-top: 95px;
   padding-bottom: 160px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.c-founder__wrapper {
-  max-width: 1110px;
 }
 @media (max-width: 991px) {
   .c-founder__ceo-name {
@@ -419,13 +396,13 @@ body {
 .c-banner__subtitle._active,
 .c-banner__title._active {
   -webkit-animation-name: pop-up-title;
-          animation-name: pop-up-title;
+  animation-name: pop-up-title;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes pop-up-title {
@@ -451,52 +428,52 @@ body {
 }
 .c-services__list-item._active {
   -webkit-animation-name: pop-up-li;
-          animation-name: pop-up-li;
+  animation-name: pop-up-li;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .c-services__list-item._active.second {
   -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  animation-delay: 400ms;
   -webkit-animation-name: pop-up-li;
-          animation-name: pop-up-li;
+  animation-name: pop-up-li;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .c-services__list-item._active.third {
   -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  animation-delay: 800ms;
   -webkit-animation-name: pop-up-li;
-          animation-name: pop-up-li;
+  animation-name: pop-up-li;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .c-services__list-item._active.fourth {
-  -webkit-animation-delay: 1100ms;
-          animation-delay: 1100ms;
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
   -webkit-animation-name: pop-up-li;
-          animation-name: pop-up-li;
+  animation-name: pop-up-li;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes pop-up-li {
@@ -522,15 +499,15 @@ body {
 }
 .c-projects__ceo._active {
   -webkit-animation-name: appearance;
-          animation-name: appearance;
+  animation-name: appearance;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   transform-origin: center center;
 }
 
@@ -557,13 +534,13 @@ body {
 }
 .c-getStarted._active {
   -webkit-animation-name: outgoing;
-          animation-name: outgoing;
+  animation-name: outgoing;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes outgoing {
@@ -585,13 +562,13 @@ body {
 }
 .c-getStarted__link._active {
   -webkit-animation-name: colorСchange;
-          animation-name: colorСchange;
+  animation-name: colorСchange;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes colorСchange {

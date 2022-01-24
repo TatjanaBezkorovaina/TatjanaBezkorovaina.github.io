@@ -1,0 +1,18 @@
+.e-link {
+  text-decoration: none;
+  line-height: 40px;
+  color: $c-grey;
+
+  &:hover {
+    color: $c-yellow;
+  }
+}
+
+.link-secondary {
+  opacity: 0.7;
+}
+
+.link-secondary:hover {
+  color: $c-yellow;
+  opacity: 1;
+}

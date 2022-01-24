@@ -125,90 +125,99 @@
 .team {
   max-width: 1100px;
   margin: 0 auto;
+}form {
+  opacity: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px #fce1e0;
+  border-radius: 5px;
+  max-width: 550px;
+  padding: 75px;
+  width: 100%;
+  height: auto;
 }
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #eceff1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-    border: 5px solid transparent;
-  }
-
-  /* элементы меню */
-  .nav__item {
-    border-top: 2px solid transparent;
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .nav__item:hover {
-    background-color: #ff6033;
-    margin-top: 5px;
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  #menu__toggle:checked ~ .c-header__nav {
-    visibility: visible;
-    right: 0;
-  }
-
-  .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .c-header__nav {
-    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav__item {
-    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.c-footer__form-item {
+  margin-bottom: 20px;
 }
-.e-button {
-  background-color: #ff6033;
-  color: #f9f2ff;
-  padding: 10px 15px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.c-footer__form-label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: block;
 }
-.e-button--pink {
-  margin-top: 25px;
+.c-footer__form-input {
+  outline-color: #ee4d47;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0px 20px;
+  font-size: 18px;
+  height: 60px;
+  width: 100%;
 }
-.e-button:hover {
-  border: 1px solid black;
-  box-shadow: none;
+.c-footer__form-input:focus {
+  box-shadow: 0px 10px 20px #fce1e0;
 }
 
-.nav__item {
-  margin-left: 45px;
-  text-decoration: none;
-  color: black;
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px;
 }
-.nav__item:hover {
-  padding-top: 4px;
-  border-top: 5px solid #ff6033;
-}%;
+
+.c-footer__form-input._error {
+  box-shadow: 0 0 15px black;
+}
+
+.c-navigation {
+  max-width: 604px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .c-navigation {
+    display: none;
+  }
+}
+.c-navigation__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .c-navigation__wrapper {
+    justify-content: space-around;
+  }
+}
+.c-navigation__item:last-child {
+  margin-right: 0;
+}
+
+.c-banner__wrapper {
+  max-width: 1285px;
+  padding-top: 7%;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.c-banner__content {
+  max-width: 741px;
+  margin-left: 15%;
+}
+@media (max-width: 576px) {
+  .c-banner__content {
+    margin-left: 1%;
+  }
+}
+.c-banner__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-banner__background-image {
+  height: auto;
+  width: 100%;
+}
+.c-banner__title {
+  font-family: "DM Serif Display", serif;
+  font-weight: normal;
+  margin-bottom: 60px;
+  line-height: 100%;
   font-size: 100px;
   cursor: default;
 }

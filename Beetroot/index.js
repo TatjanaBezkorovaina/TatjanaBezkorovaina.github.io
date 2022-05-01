@@ -84,4 +84,32 @@ function initMap() {
   });
 }
 
-// Scroll to top
+// Navbar close
+// function close_offcanvas() {
+//   document.querySelector(".offcanvas.show").classList.remove("show");
+// }
+
+// document.querySelector(".nav-link").addEventListener("click", function (event) {
+//   close_offcanvas();
+// });
+
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("offcanvasNavbar");
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+navLinks.forEach((l) => {
+  l.addEventListener("click", () => {
+    bsCollapse.toggle();
+  });
+});
+// $('a[data-target^="anchor"]').on("click", function () {
+//   $(".offcanvas").collapse("hide");
+//   $a = $($(this).attr("href"));
+//   return false;
+// });
+// $(".nav-link").on("click", function () {
+//   $(".offcanvas-end").removeClass("show");
+// });
+
+// $(".nav-link").on("click", function () {
+//   $(".offcanvas-end").collapse("hide");
+// });

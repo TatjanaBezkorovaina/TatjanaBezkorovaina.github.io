@@ -63,6 +63,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
               class="offcanvas offcanvas-end"
               tabindex="-1"
               id="offcanvasNavbar"
@@ -74,35 +76,41 @@
                 </h6>
                 <button
                   type="button"
-                  class="btn-close text-reset"
+                  class="btn-close text-reset nav-item"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
               </div>
               <div class="offcanvas-body">
                 <ul
-                  class="
-                    navbar-nav
-                    justify-content-end
-                    flex-grow-1
-                    pe-3
-                    fw-bold
-                  "
+                  class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-bold"
                 >
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      data-target="anchor"
+                      href="#"
+                      >Home</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" data-target="anchor" href="#about"
+                      >About</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" data-target="anchor" href="#projects"
+                      >Projects</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" data-target="anchor" href="#contact"
+                      >Contact</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" data-target="anchor" href="#FAQ">FAQ</a>
                   </li>
                 </ul>
                 <form class="d-flex mt-3">
@@ -180,7 +188,7 @@
     <section class="c-founder container">
       <div class="c-founder__wrapper row">
         <div class="c-founder__strategy mt-5 col-xs-12 col-md-6">
-          <div class="c-founder__strategy-subtitle py-3">
+          <div class="c-founder__strategy-subtitle py-3" id="about">
             What we do for you
           </div>
           <h2 class="c-founder__strategy-title lh-base py-3">
@@ -212,13 +220,7 @@
             >
           </div>
           <div
-            class="
-              c-founder__ceo-photo
-              p-3
-              mb-5
-              d-lg-flex
-              justify-content-around
-            "
+            class="c-founder__ceo-photo p-3 mb-5 d-lg-flex justify-content-around"
           >
             <div class="e-img-round">
               <img src="./assets/img/SEO.png" alt="Photo Genevieve Rodriquez" />
@@ -235,7 +237,7 @@
     <!-- Our Projects  -->
     <section class="c-projects">
       <div class="c-projects__row h-container">
-        <h2 class="c-projects__title fw-bold lh-base">
+        <h2 class="c-projects__title fw-bold lh-base" id="projects">
           We Have Some Awesome Project.
         </h2>
         <div class="c-projects__subtitle">
@@ -253,13 +255,7 @@
             class="c-projects__img-adapt"
           />
           <div
-            class="
-              c-projects__ceo
-              shadow-lg
-              p-4
-              rounded
-              _anim-items _anim-no-hide
-            "
+            class="c-projects__ceo shadow-lg p-4 rounded _anim-items _anim-no-hide"
           >
             <div class="c-projects__ceo-quote">
               <em
@@ -304,11 +300,7 @@
       </div>
       <!-- Project-2 -->
       <div
-        class="
-          c-projects__one c-projects__one--reverce
-          justify-content-between
-          h-container
-        "
+        class="c-projects__one c-projects__one--reverce justify-content-between h-container"
       >
         <div class="c-projects__left-part">
           <img
@@ -317,13 +309,7 @@
             class="c-projects__img-adapt"
           />
           <div
-            class="
-              c-projects__ceo c-projects__ceo--reverse
-              shadow-lg
-              p-4
-              rounded
-              _anim-items _anim-no-hide
-            "
+            class="c-projects__ceo c-projects__ceo--reverse shadow-lg p-4 rounded _anim-items _anim-no-hide"
           >
             <div class="c-projects__ceo-quote">
               <em
@@ -376,13 +362,7 @@
             class="c-projects__img-adapt"
           />
           <div
-            class="
-              c-projects__ceo
-              shadow-lg
-              p-4
-              rounded
-              _anim-items _anim-no-hide
-            "
+            class="c-projects__ceo shadow-lg p-4 rounded _anim-items _anim-no-hide"
           >
             <div class="c-projects__ceo-quote">
               <em
@@ -437,11 +417,7 @@
         </h2>
         <ul class="c-services__list row gx-5 list-unstyled">
           <li
-            class="
-              c-services__list-item
-              col-sm-6 col-md-6 col-lg-3
-              _anim-items _anim-no-hide
-            "
+            class="c-services__list-item col-sm-6 col-md-6 col-lg-3 _anim-items _anim-no-hide"
           >
             <div class="wrapper">
               <div class="e-item-subtitle text-uppercase fs-4 mb-3">
@@ -463,13 +439,7 @@
             </div>
           </li>
           <li
-            class="
-              c-services__list-item
-              col-sm-6 col-md-6 col-lg-3
-              _anim-items
-              second
-              _anim-no-hide
-            "
+            class="c-services__list-item col-sm-6 col-md-6 col-lg-3 _anim-items second _anim-no-hide"
           >
             <div class="wrapper">
               <div class="e-item-subtitle text-uppercase fs-4 mb-3">
@@ -491,13 +461,7 @@
             </div>
           </li>
           <li
-            class="
-              c-services__list-item
-              col-sm-6 col-md-6 col-lg-3
-              _anim-items
-              third
-              _anim-no-hide
-            "
+            class="c-services__list-item col-sm-6 col-md-6 col-lg-3 _anim-items third _anim-no-hide"
           >
             <div class="wrapper">
               <div class="e-item-subtitle text-uppercase fs-4 mb-3">
@@ -519,13 +483,7 @@
             </div>
           </li>
           <li
-            class="
-              c-services__list-item
-              col-sm-6 col-md-6 col-lg-3
-              _anim-items
-              fourth
-              _anim-no-hide
-            "
+            class="c-services__list-item col-sm-6 col-md-6 col-lg-3 _anim-items fourth _anim-no-hide"
           >
             <div class="wrapper">
               <div class="e-item-subtitle text-uppercase fs-4 mb-3">
@@ -558,13 +516,7 @@
           </h1>
           <a
             href="#"
-            class="
-              c-getStarted__link
-              link-secondary
-              fw-bold
-              text-uppercase text-decoration-none
-              _anim-items
-            "
+            class="c-getStarted__link link-secondary fw-bold text-uppercase text-decoration-none _anim-items"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal3"
             >&rtrif;
@@ -584,7 +536,10 @@
               >+32 50 31 28 32</a
             >
           </div>
-          <div class="c-footer__contacts-item col-sm-12 col-lg-9 g-0">
+          <div
+            class="c-footer__contacts-item col-sm-12 col-lg-9 g-0"
+            id="contact"
+          >
             <div class="c-footer__contacts-text">Address</div>
             <address class="c-footer__contacts-value fw-bold lh-lg">
               491 Merlin Crest Suite 963
@@ -604,7 +559,10 @@
             </ul>
           </div>
           <div class="c-footer__help col g-0">
-            <h6 class="c-footer__help-title titleindent text-uppercase">
+            <h6
+              class="c-footer__help-title titleindent text-uppercase"
+              id="FAQ"
+            >
               Help And Advice
             </h6>
             <ul class="c-footer__help-list list-unstyled">
@@ -702,13 +660,7 @@
             ><img src="./assets/img/Webovio.svg" alt="Logo" />
           </a>
           <span
-            class="
-              c-footer__bottom-copyrights
-              col
-              align-self-center
-              g-0
-              col-sm-12 col-md-6
-            "
+            class="c-footer__bottom-copyrights col align-self-center g-0 col-sm-12 col-md-6"
             >&copy 2020 &commat; webovio. All Rights Reserved.</span
           >
         </div>
